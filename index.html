@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/estilos.css" />
+        <title>Pagina para tecno</title>
+</head>
+
+<body>
+
+<div id="contenido">
+				<nav>
+                    <ul>
+                        <li><a href="#perfil">Alumno</a></li>
+                        <li><a href="#tp3punto5">TP3-Punto 5</a></li>
+                        <li><a href="#tp3punto6">TP3-Punto 6</a></li>
+                        <li><a href="#tpexperimental1">Tp-Experimental 1</a></li>
+                        <li><a href="#tpexperimental2">Tp-Experimental 2</a></li>
+                    </ul>
+                </nav>
+          <div id="perfil">
+            <h1>FERREYRA MATIAS ALEXIS</h1>
+                    <p id="foto_perfil"><img src="img/perfil1.jpg" alt="foto perfil"  /></p>
+                    <p>Tengo 19 años, soy de la localidad de Ranelagh en Berazategui. Estudie en una escuela tecnica en la cual me recibi con un titulo de tecnico informatico.
+                    </p>
+                    <p>Me gusta caminar y visitar lugares naturales, ver peliculas, series (GOT :3), 
+                      leer novelas, juntarme con amigos, jugar a los videos juegos en especial online. Escucho musica demasiado variada para definir un genero en especifico.
+                    </p>
+                </div>
+
+
+                <div id="tp3punto5">
+                    <h1>TP3-PUNTO 5</h1>
+                    <p id="fototp3p5">
+    <canvas id="canvas4"></canvas>
+    <script src="processing.min.js"></script>
+    <script type="application/processing" data-processing-target="canvas4">
+    color relleno=color(255,0,0);
+void setup(){
+size(400,400);
+background(255);
+}
+void draw(){
+stroke(relleno);
+ellipse(mouseX,mouseY,50,50);
+}
+
+void mousePressed(){
+if(relleno==color(255,0,0)){
+relleno=color(0,0,255);
+}
+else{
+relleno=color(255,0,0);
+}
+
+}
+</script></p>
+                    <code>
+                    	<pre>
+color relleno=color(255,0,0);
+void setup(){
+size(400,400);
+background(255);
+}
+void draw(){
+stroke(relleno);
+ellipse(mouseX,mouseY,50,50);
+}
+
+void mousePressed(){
+if(relleno==color(255,0,0)){
+relleno=color(0,0,255);
+}
+else{
+relleno=color(255,0,0);
+}
+
+}
+						</pre>
+					</code> 
+                </div>
+
+                <div id="tp3punto6">
+                    <h1>TP3-PUNTO 6</h1>
+                   <p id="fototp3p6"> 
+    <canvas id="canvas3"></canvas>
+    <script src="processing.min.js"></script>
+    <script type="application/processing" data-processing-target="canvas3">
+color relleno=color(255,0,0);
+void setup(){
+size(400,400);
+}
+void draw(){
+background(255);
+fill(relleno);
+ellipse(mouseX,mouseY,50,50);
+}
+
+void mousePressed(){
+if(relleno==color(255,0,0) && mouseX>=150 && mouseX<=250
+&& mouseY>=150 && mouseY<=250){
+relleno=color(0,0,255);
+}
+else if(relleno==color(0,0,255) && mouseX>=150 && 
+mouseX<=250 && mouseY>=150 && mouseY<=250){
+relleno=color(255,0,0);
+}
+}
+    </script></p>
+                    <code>
+                    <pre>
+color relleno=color(255,0,0);
+void setup(){
+size(400,400);
+}
+void draw(){
+background(255);
+fill(relleno);
+ellipse(mouseX,mouseY,50,50);
+}
+
+void mousePressed(){
+if(relleno==color(255,0,0) && mouseX>=150 && mouseX<=250
+&& mouseY>=150 && mouseY<=250){
+relleno=color(0,0,255);
+}
+else if(relleno==color(0,0,255) && mouseX>=150 && 
+mouseX<=250 && mouseY>=150 && mouseY<=250){
+relleno=color(255,0,0);
+}
+}
+						</pre>
+					</code> 
+                </div>
+
+                <div id="tpexperimental1">
+                    <h1>TP EXPERIMENTAL 1</h1>
+                    <p id="fototpexp1">
+    <canvas id="canvas1"></canvas>
+    <script src="processing.min.js"></script>
+    <script type="application/processing" data-processing-target="canvas1">
+int xspeed, yspeed;
+int xpos,ypos,wdth,x;
+void setup() {
+size(400,400);
+background(0);
+xspeed=80;
+yspeed=80;
+wdth = 90;
+x=900;
+noStroke ();
+xpos=width/2;
+ypos=height/2;
+frameRate(30);
+}
+
+void draw(){
+fill ((random (250)),(random (20, 200)),(random (250)));
+ellipse(xpos,ypos,wdth,x);
+xpos+=xspeed;
+ypos+=yspeed;
+if(xpos>=width-wdth/2 || xpos<=wdth/2){
+xspeed*=-1;
+}
+if (ypos>=height-x/2 || ypos<=x/2){
+yspeed*=-1;
+}
+}
+</script></p>
+                    <code>
+                        <pre>
+int xspeed, yspeed;
+int xpos,ypos,wdth,x;
+void setup() {
+size(400,400);
+background(0);
+xspeed=80;
+yspeed=80;
+wdth = 90;
+x=900;
+noStroke ();
+xpos=width/2;
+ypos=height/2;
+frameRate(30);
+}
+
+void draw(){
+fill ((random (250)),(random (20, 200)),(random (250)));
+ellipse(xpos,ypos,wdth,x);
+xpos+=xspeed;
+ypos+=yspeed;
+if(xpos>=width-wdth/2 || xpos<=wdth/2){
+xspeed*=-1;
+}
+if (ypos>=height-x/2 || ypos<=x/2){
+yspeed*=-1;
+}
+}
+                        </pre>
+                    </code> 
+                </div>
+
+                <div id="tpexperimental2">
+                    <h1>TP EXPERIMENTAL 2</h1>
+                    <p id="fototpexp2">
+    <canvas id="canvas2"></canvas>
+    <script src="processing.min.js"></script>
+    <script type="application/processing" data-processing-target="canvas2">
+void setup() {
+size(400,400);
+frameRate(15);
+}
+
+void draw() {
+stroke(0);
+background(255);
+fill(0, 0, 255);
+strokeWeight(0);
+noStroke();
+float t = random(100);
+ellipse(random(width), random(height), t, t);
+fill(255, 255, 0);
+triangle(random(width), random(height), random(width),
+random(height), random(width), random(height));
+stroke(0, 0, 0);
+float y = random(height);
+for (int i = 0; i < (int)random(200); i++) {
+strokeWeight(random(5));
+line(0, y + i*10, width, y + i*10);
+}
+
+}
+    </script></p>
+                        <code>
+                        <pre>
+void setup() {
+size(400,400);
+frameRate(15);
+}
+
+void draw() {
+stroke(0);
+background(255);
+fill(0, 0, 255);
+strokeWeight(0);
+noStroke();
+float t = random(100);
+ellipse(random(width), random(height), t, t);
+fill(255, 255, 0);
+triangle(random(width), random(height), random(width),
+random(height), random(width), random(height));
+stroke(0, 0, 0);
+float y = random(height);
+for (int i = 0; i < (int)random(200); i++) {
+strokeWeight(random(5));
+line(0, y + i*10, width, y + i*10);
+}
+
+}
+                        </pre>
+                    </code> 
+                </div>
+
+      </div>
+                </div>
+
+      </div>
+
+</body>
+
+</html>

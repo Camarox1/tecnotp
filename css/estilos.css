@@ -1,0 +1,84 @@
+
+#contenido {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a7cfdf+0,23538a+100;Blue+3d+%238 */
+background: rgb(167,207,223); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(167,207,223,1) 0%, rgba(35,83,138,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
+
+
+	margin: 0 auto;
+	width: 1000px;
+}
+
+#perfil{
+	font-size: 25px;
+padding-top: 20px;
+}
+
+#perfil h1 {
+text-align: center;
+}
+
+#perfil #foto_perfil {
+    text-align: center;
+    border: px solid #181818;
+}
+#perfil p{
+	text-align: center;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: url("nav_background.png");
+}
+
+nav ul {
+    margin: 0 auto;
+    width: 1000px;
+    list-style: none;
+}
+
+nav ul li {
+     float: left;
+}
+nav ul li a {
+    display: block;
+    margin-right: 70px;
+    width: 120px;
+    font-size: 15px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    color: #690707;
+}
+nav ul li a:hover {
+     color: #fff;
+}
+nav ul li.selected a {
+     color: #fff;
+}
+
+#fototp3p5, #fototp3p6, #fototpexp1, #fototpexp2{
+    position: absolute;
+    padding-left: 570px;
+}
+
+#tp3punto5{
+	padding-left: 10px;
+	font-size: 17px;	
+}
+
+#tp3punto6, #tpexperimental1, #tpexperimental2{
+	padding-left: 10px;
+	font-size: 17px;
+	padding-top: 200px;
+}
